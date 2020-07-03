@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, p {
+  margin: 0;
+  padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+#graphic_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #f1e7da;
+}
+
+#text_window {
+  border-width: 1px;
+  border-style: solid;
+  width: 450px;
+  height: 400px;
+  margin-top: 5vw;
+  background: white;
+  animation: none;
+  display: none;
+  overflow: auto;
+}
+
+#graphic_container {
+  background: #f1e7da;
+}
+
+#test_container {
+  fill: lightgreen;
+}
+
+#beef_graphic_container {
+  width: 60vw;
+  height: auto;
+  background: #f1e7da;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: auto;
+}
+
+.cow_body {
+  fill: white;
+  transition: fill .25s;
+}
+
+.cow_body_no_hover {
+  fill: white;
+}
+
+.cow_text {
+  pointer-events: none;
+  font-size:28px; color: #231f20;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#shank-text {
+  font-size:20px;
+  color: #231f20
+}
+
+#instructions {
+  position: absolute;
+  top: 2.5%;
+  left: 20%;
+  margin-left: -100px;
+  display: none;
+  font-size: 20px;
+
+}
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-40px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+ }
+ 100% {
+    opacity: 0;
+    transform: translateY(-40px);
+ } 
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#subprimal_cuts_gallery > * {
+  margin: 1em .75em 0em 0em !important;
+}
+
+#subprimal_cuts_gallery {
+  padding: 0em 0em 2em 0em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#cut_card {
+  width: 120px;
+  text-align: center;
+}
+
+#cut_card img {
+  transition: transform .2s;
+  width: 120px;
+}
+
+#cut_card:hover img {
+  transform: scale(1.2);
+}
+
+#text_window .wrapper > * {
+  margin-top: 1em;
+}
+
+#text_window h2 {
+  font-size: 27px;
+}
+
+#text_window h3 {
+  font-size: 22px;
+}
