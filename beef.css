@@ -160,3 +160,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, p {
 #text_window h3 {
   font-size: 22px;
 }
+
+a:visited, a:active, a:link {
+  color: black;
+}
